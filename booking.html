@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>the time less residence | Booking</title>
+
+    <meta name="description" content="Book your stay at the time less residence with our online room booking form.">
+
+    <meta name="keywords" content="the time less residence, Hotel Booking, Room Reservation">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <div class="logo">the time less residence</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Booking Section -->
+    <section class="section">
+
+        <h1>Room Booking</h1>
+
+        <p>
+            Fill in the details below to reserve your room at the time less residence.
+        </p>
+
+        <form id="bookingForm" onsubmit="return validateForm()">
+
+            <label for="name">Full Name</label><br>
+            <input type="text" id="name" placeholder="Enter your full name" required><br><br>
+
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required><br><br>
+
+            <label for="room">Select Room</label><br>
+            <select id="room">
+                <option>Deluxe Room</option>
+                <option>Premium Room</option>
+                <option>Suite Room</option>
+            </select><br><br>
+
+            <label for="checkin">Check-In Date</label><br>
+            <input type="date" id="checkin" required><br><br>
+
+            <label for="checkout">Check-Out Date</label><br>
+            <input type="date" id="checkout" required><br><br>
+
+            <label for="guests">Number of Guests</label><br>
+            <input type="number" id="guests" min="1" max="6" placeholder="Enter number of guests" required><br><br>
+
+            <button type="submit">Book Now</button>
+
+        </form>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+
+        <h2>Contact Us</h2>
+
+        <p><strong>Address:</strong> Hyderabad, Telangana, India</p>
+
+        <p><strong>Phone:</strong> +91 9825474862</p>
+
+        <p><strong>Email:</strong> info@thetimelessresidence.com</p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p><strong>the time less residence</strong></p>
+
+        <p>Phone: +91 9825474862</p>
+
+        <p>Email: info@thetimelessresidence.com</p>
+
+        <p>&copy; 2026 the time less residence. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>
